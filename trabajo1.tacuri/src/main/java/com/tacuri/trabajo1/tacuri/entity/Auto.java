@@ -12,7 +12,7 @@ import lombok.experimental.SuperBuilder;
 @SuperBuilder
 @NoArgsConstructor
 @FieldDefaults(level = AccessLevel.PRIVATE)
-public class Auto  extends  Marca{
+public class Auto extends Marca {
 
   String modelo;
   int year;
@@ -20,4 +20,15 @@ public class Auto  extends  Marca{
   int cilindraje;
   double costo;
 
+  public double calcularMatricula(int year) {
+    return 2022 - year;
+  }
+
+  public int calcularEdad(int year) {
+    return 2022 - year;
+  }
+
+  public boolean esTaxi() {
+    return Boolean.TRUE;
+  }
 }

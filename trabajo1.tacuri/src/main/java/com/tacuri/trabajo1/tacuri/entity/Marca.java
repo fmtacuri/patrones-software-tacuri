@@ -17,4 +17,8 @@ public class Marca {
   int codigo;
   int description;
 
+  public String getPaisOrigenMarca() {
+    return "PAIS_MARCA";
+  }
+
 }
