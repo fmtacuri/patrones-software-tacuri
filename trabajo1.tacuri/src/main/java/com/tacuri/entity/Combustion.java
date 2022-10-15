@@ -1,4 +1,4 @@
-package com.tacuri.trabajo1.tacuri.entity;
+package com.tacuri.entity;
 
 import lombok.AccessLevel;
 import lombok.AllArgsConstructor;
@@ -12,6 +12,7 @@ import lombok.experimental.SuperBuilder;
 @NoArgsConstructor
 @AllArgsConstructor
 @FieldDefaults(level = AccessLevel.PRIVATE)
-public class Combustion extends Marca {
+public class Combustion extends Auto {
+
   String tipoGasolina;
 }

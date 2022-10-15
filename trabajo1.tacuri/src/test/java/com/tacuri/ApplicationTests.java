@@ -1,4 +1,4 @@
-package com.tacuri.trabajo1.tacuri;
+package com.tacuri;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

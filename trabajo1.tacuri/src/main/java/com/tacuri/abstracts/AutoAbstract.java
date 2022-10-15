@@ -1,5 +1,6 @@
-package com.tacuri.trabajo1.tacuri.entity;
+package com.tacuri.abstracts;
 
+import com.tacuri.entity.Marca;
 import lombok.AccessLevel;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
@@ -12,7 +13,7 @@ import lombok.experimental.SuperBuilder;
 @SuperBuilder
 @NoArgsConstructor
 @FieldDefaults(level = AccessLevel.PRIVATE)
-public class Auto extends Marca {
+public abstract class AutoAbstract extends Marca {
 
   String modelo;
   int year;
@@ -31,4 +32,6 @@ public class Auto extends Marca {
   public boolean esTaxi() {
     return Boolean.TRUE;
   }
+
+  public abstract String getInfo();
 }

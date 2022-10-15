@@ -1,4 +1,4 @@
-package com.tacuri.trabajo1.tacuri.entity;
+package com.tacuri.abstracts;
 
 import lombok.AccessLevel;
 import lombok.AllArgsConstructor;
@@ -12,7 +12,12 @@ import lombok.experimental.SuperBuilder;
 @NoArgsConstructor
 @AllArgsConstructor
 @FieldDefaults(level = AccessLevel.PRIVATE)
-public class Hibrido extends Combustion {
+public class Electrico extends AutoAbstract {
 
   int capacidadBateria;
+
+  @Override
+  public String getInfo() {
+    return "Cilindraje: " + getCilindraje();
+  }
 }

@@ -1,4 +1,4 @@
-package com.tacuri.trabajo1.tacuri.enums;
+package com.tacuri.enums;
 
 import java.util.Arrays;
 import lombok.Getter;

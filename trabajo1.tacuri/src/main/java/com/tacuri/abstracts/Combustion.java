@@ -1,4 +1,4 @@
-package com.tacuri.trabajo1.tacuri.entity;
+package com.tacuri.abstracts;
 
 import lombok.AccessLevel;
 import lombok.AllArgsConstructor;
@@ -12,13 +12,12 @@ import lombok.experimental.SuperBuilder;
 @NoArgsConstructor
 @AllArgsConstructor
 @FieldDefaults(level = AccessLevel.PRIVATE)
-public class Marca {
+public class Combustion extends AutoAbstract {
 
-  int codigo;
-  int description;
+  String tipoGasolina;
 
-  public String getPaisOrigenMarca() {
-    return "PAIS_MARCA";
+  @Override
+  public String getInfo() {
+    return "Color: " + getColor();
   }
-
 }

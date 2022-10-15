@@ -1,4 +1,4 @@
-package com.tacuri.trabajo1.tacuri.entity;
+package com.tacuri.entity;
 
 import lombok.AccessLevel;
 import lombok.AllArgsConstructor;
@@ -12,7 +12,7 @@ import lombok.experimental.SuperBuilder;
 @NoArgsConstructor
 @AllArgsConstructor
 @FieldDefaults(level = AccessLevel.PRIVATE)
-public class Electrico extends Marca {
+public class Electrico extends Auto {
 
   int capacidadBateria;
 }
