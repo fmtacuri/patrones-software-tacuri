@@ -1,11 +1,13 @@
 package com.tacuri;
 
+import com.fasterxml.jackson.databind.ObjectMapper;
 import com.tacuri.abstracts.AutoAbstract;
 import com.tacuri.abstracts.Combustion;
 import com.tacuri.abstracts.Electrico;
 import com.tacuri.factory.Contrato;
 import com.tacuri.factory.ContratoFactory;
 import com.tacuri.factory.ContratoType;
+import com.tacuri.singleton.ObjectMapperSingleton;
 import lombok.extern.log4j.Log4j2;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -34,6 +36,15 @@ public class Application {
     log.info("Fijo: {}", contratoFijo::mostrarSueldo);
     log.info("Temporal: {}", contratoTemporal::mostrarSueldo);
 
+    log.info("------------------- SINGLETON ----------");
+
+    ObjectMapper mapperOne = ObjectMapperSingleton.getInstance();
+    ObjectMapper mapperTwo = ObjectMapperSingleton.getInstance();
+
+    log.info("instanceOne: {}", () -> mapperOne);
+    log.info("instanceTwo: {}", () -> mapperTwo);
+
   }
+
 
 }
