@@ -8,6 +8,8 @@ import com.tacuri.factory.Contrato;
 import com.tacuri.factory.ContratoFactory;
 import com.tacuri.factory.ContratoType;
 import com.tacuri.singleton.ObjectMapperSingleton;
+import com.tacuri.strategy.AvaluoStrategy;
+import com.tacuri.strategy.enums.TiposEnum;
 import lombok.extern.log4j.Log4j2;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -43,6 +45,10 @@ public class Application {
 
     log.info("instanceOne: {}", () -> mapperOne);
     log.info("instanceTwo: {}", () -> mapperTwo);
+
+    log.info("------------------- STRATEGY ----------");
+
+    log.info(AvaluoStrategy.getAvaluo(TiposEnum.MIXTO, 20));
 
   }
 
