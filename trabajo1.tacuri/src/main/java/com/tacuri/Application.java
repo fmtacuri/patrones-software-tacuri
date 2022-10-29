@@ -49,6 +49,8 @@ public class Application {
     log.info("------------------- STRATEGY ----------");
 
     log.info(AvaluoStrategy.getAvaluo(TiposEnum.MIXTO, 20));
+    log.info(AvaluoStrategy.getAvaluo(TiposEnum.PARTICULAR, 20));
+    log.info(AvaluoStrategy.getAvaluo(TiposEnum.PUBLICO, 20));
 
   }
 
